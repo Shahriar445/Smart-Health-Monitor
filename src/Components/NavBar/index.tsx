@@ -11,18 +11,13 @@ type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
   {
-    label: "Navigation One",
-    key: "mail",
-    icon: <MailOutlined />,
-  },
-  {
-    label: "Navigation Two",
-    key: "app",
+    label: "Home",
+    key: "home",
     icon: <AppstoreOutlined />,
     // disabled: true,
   },
   {
-    label: "Navigation Three - Submenu",
+    label: "Setting",
     key: "SubMenu",
     icon: <SettingOutlined />,
     children: [
@@ -48,7 +43,7 @@ const items: MenuItem[] = [
     key: "alipay",
     label: (
       <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-        Navigation Four - Link
+        About
       </a>
     ),
   },
